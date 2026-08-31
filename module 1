@@ -1,1 +1,20 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+gpa = float(input("Enter your GPA: "))
 
+birth_year = 2026 - age
+
+print("\n--- Student Profile ---")
+print("Name:", name)
+print("Age:", age)
+print("Birth Year:", birth_year)
+print(f"GPA: {gpa:.2f}")
+
+if gpa >= 3.5:
+    print("GPA Status: Excellent")
+elif gpa >= 3.0:
+    print("GPA Status: Good")
+elif gpa >= 2.0:
+    print("GPA Status: Satisfactory")
+else:
+    print("GPA Status: Needs Improvement")
